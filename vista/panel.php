@@ -15,7 +15,7 @@ if(!isset($_SESSION["nick"]))
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 3 | Dashboard</title>
+  <title>FUN GAMES | Panel</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Font Awesome -->
@@ -171,7 +171,7 @@ if(!isset($_SESSION["nick"]))
     <a href="index3.html" class="brand-link">
       <img src="../img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
            style="opacity: .8">
-      <span class="brand-text font-weight-light">AdminLTE 3</span>
+      <span class="brand-text font-weight-light">Panel de Usuario</span>
     </a>
 
     <!-- Sidebar -->
@@ -179,7 +179,7 @@ if(!isset($_SESSION["nick"]))
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+          <img src="../img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
           <a href="#" class="d-block"><?php  echo $_SESSION["nick"]; ?></a>
@@ -203,10 +203,10 @@ if(!isset($_SESSION["nick"]))
               <li class="nav-item">
                 <a href="./index.html" class="nav-link active">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v1</p>
+                  <p>Compras</p>
                 </a>
               </li>
-              <li class="nav-item">
+              <!--<li class="nav-item">
                 <a href="./index2.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Dashboard v2</p>
@@ -217,10 +217,10 @@ if(!isset($_SESSION["nick"]))
                   <i class="far fa-circle nav-icon"></i>
                   <p>Dashboard v3</p>
                 </a>
-              </li>
+              </li>-->
             </ul>
           </li>
-          <li class="nav-item">
+          <!--<li class="nav-item">
             <a href="pages/widgets.html" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
@@ -753,7 +753,7 @@ if(!isset($_SESSION["nick"]))
               <div class="inner">
                 <h3>150</h3>
 
-                <p>New Orders</p>
+                <p>Productos</p>
               </div>
               <div class="icon">
                 <i class="ion ion-bag"></i>
@@ -768,7 +768,7 @@ if(!isset($_SESSION["nick"]))
               <div class="inner">
                 <h3>53<sup style="font-size: 20px">%</sup></h3>
 
-                <p>Bounce Rate</p>
+                <p>Mis Compras</p>
               </div>
               <div class="icon">
                 <i class="ion ion-stats-bars"></i>
@@ -783,7 +783,7 @@ if(!isset($_SESSION["nick"]))
               <div class="inner">
                 <h3>44</h3>
 
-                <p>User Registrations</p>
+                <p>Modificar Perfil</p>
               </div>
               <div class="icon">
                 <i class="ion ion-person-add"></i>
