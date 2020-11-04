@@ -18,7 +18,8 @@ $SQL = "select usuarios.nick_cliente, usuarios.clave_cliente, perfiles.codigo_pe
 $consulta = mysqli_query($conexion, $SQL);
 /*Recordad que en la base de datos cambiar los campos cliente por usuario*/
 if($consulta->num_rows > 0){
-    $row = $consulta->fetch_array(MYSQLI_ASSOC);
+    //$row = $consulta->fetch_assoc(MYSQLI_ASSOC);
+    $row = $consulta->fetch_assoc();
     $nombre_usuario = $row['nick_cliente'];
     $codigo_perfil = $row['codigo_perfil'];
     $nombre_perfil = $row['nombre_perfil'];
