@@ -8,7 +8,3 @@ if(!isset($_SESSION["nick_cliente"]))
 }
 ?>
 
-estas en el administrador 
-
-
-asd
