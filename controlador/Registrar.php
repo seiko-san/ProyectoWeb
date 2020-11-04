@@ -14,9 +14,6 @@ $clave = $_POST["clave"];
 //die();
 
 
-
-
-
 if ($nombre == '' || $apellido == '' || $direccion == '' || $email == '' || $nick == '' || $clave == '') {
 
     echo "<script>
@@ -26,7 +23,7 @@ if ($nombre == '' || $apellido == '' || $direccion == '' || $email == '' || $nic
     </script>";
    
 } else {
-    $SQL = "INSERT INTO cliente(`nombre_cliente`,`apellido_cliente`,`direccion_cliente`,`email_cliente`,`nick_cliente`,`clave_cliente`) values('$nombre','$apellido','$direccion','$email','$nick','$clave')";
+    $SQL = "INSERT INTO Usuarios(`nombre_cliente`,`apellido_cliente`,`direccion_cliente`,`email_cliente`,`nick_cliente`,`clave_cliente`,`codigo_perfil`) values('$nombre','$apellido','$direccion','$email','$nick','$clave',2)";
     $resultado = mysqli_query($conexion, $SQL);
     if ($resultado) {
 
