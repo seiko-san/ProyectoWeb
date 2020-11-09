@@ -2,7 +2,7 @@
 <?php  
 session_start();
 
-if(!isset($_SESSION["nick_cliente"]))
+if(!isset($_SESSION["nick_usuario"]))
 {
     header("Location: login.php");
 }
